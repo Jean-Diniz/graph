@@ -29,24 +29,6 @@ public class AdjacencyList {
 
     }
 
-    static class Pair<T1, T2> {
-        private T1 first;
-        private T2 second;
-
-        public Pair(T1 first, T2 second) {
-            this.first = first;
-            this.second = second;
-        }
-
-        public T1 getFirst() {
-            return first;
-        }
-
-        public T2 getSecond() {
-            return second;
-        }
-    }
-
     static Pair<Integer, Integer> returnDegree(List<List<Integer>> adjacencyList, int n, int vertex) {
         int inDegree = 0;
         int outDegree = adjacencyList.get(vertex).size();
